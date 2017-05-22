@@ -22,10 +22,19 @@ android {
 }
 
 dependencies {
+    // lib file compile
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    // module compile
+    compile project(path: ':lib')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.0'
     testCompile 'junit:junit:4.12'
+    // image use glide library
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // database use green dao library
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v1.3.0'
 }

@@ -22,13 +22,16 @@ import android.content.Context;
 public class ContextUtils {
 
     @SuppressLint("StaticFieldLeak")
-    private static Context context;
+    protected static Context appContext;
 
     public static void initialize(Context context) {
-        ContextUtils.context = context;
+        if (context == null) {
+            throw new NullPointerException("context is null.");
+        }
+        appContext = context.getApplicationContext();
     }
 
     public static Context getContext() {
-        return context;
+        return appContext;
     }
 }

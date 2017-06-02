@@ -12,6 +12,7 @@ package com.edwin.androidlib;
 
 import android.content.Context;
 
+import com.edwin.androidlib.http.Http;
 import com.edwin.androidlib.image.Image;
 import com.edwin.androidlib.utils.ContextUtils;
 import com.edwin.androidlib.utils.HandlerUtils;
@@ -28,5 +29,6 @@ public class AndroidLib {
         ContextUtils.initialize(context);
         HandlerUtils.initialize();
         Image.initialize();
+        Http.initialize(context);
     }
 }

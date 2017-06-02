@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="image">
+        <attr name="shape" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Bubble">
+        <attr name="bubbleWidth" format="dimension" />
+        <attr name="bubbleHeight" format="dimension" />
+        <attr name="bubbleAngle" format="dimension" />
+        <attr name="bubbleAngle_topLeft" format="dimension" />
+        <attr name="bubbleAngle_topRight" format="dimension" />
+        <attr name="bubbleAngle_bottomLeft" format="dimension" />
+        <attr name="bubbleAngle_bottomRight" format="dimension" />
+        <attr name="bubblePosition" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="bubbleLocation" format="enum">
+            <enum name="left" value="0x00" />
+            <enum name="top" value="0x01" />
+            <enum name="right" value="0x02" />
+            <enum name="bottom" value="0x03" />
+        </attr>
+    </declare-styleable>
+</resources>
